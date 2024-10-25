@@ -685,6 +685,8 @@ header {
     overflow: hidden;
 }
 
+
+
 .review_box {
     width: 300px;
     height: 350px;
@@ -706,6 +708,8 @@ header {
 .review_box li {
     width: 300px;
     height: 200px;
+    text-align: left;
+    margin: auto;
 }
 
 .review_box p {
@@ -713,7 +717,6 @@ header {
 }
 
 .review_box h5 {
-    margin-top: 80px;
     font-size: 18px;
 }
 
@@ -946,6 +949,9 @@ footer {
     }
 }
 
+
+
+
 /* 테블릿 사이즈 */
 @media (max-width:1340px) {
 
@@ -1050,6 +1056,10 @@ footer {
 
     .nav a {
         font-size: 20px;
+    }
+
+    .main_in {
+        width: 100%;
     }
 
     .main1_in p {
@@ -1258,11 +1268,7 @@ footer {
 
     .main_in h1 {
         font-size: 60px;
-        margin-left: -200px;
-    }
 
-    .main_in p {
-        margin-left: -200px;
     }
 
     .main1_in h1 {
@@ -1323,14 +1329,25 @@ footer {
         margin-bottom: 30px;
     }
 
-    .big_img {
-        width: 500px;
-        margin-left: 100px;
+    .mySwiper {
+        width: 100%;
     }
 
     .mySwiper .swiper-slide-active h4,
     .mySwiper .swiper-slide-active p {
-        margin-left: 100px;
+        width: 400px;
+        margin: auto;
+        padding-left: 0;
+
+    }
+
+    .mySwiper .swiper-slide img {
+        display: block;
+        margin: auto;
+    }
+
+    .mySwiper .swiper-wrapper .swiper-slide:nth-of-type(4) {
+        display: none;
     }
 
     .re_text h2 {
@@ -1341,8 +1358,10 @@ footer {
         background: #f5efe0;
     }
 
-    .scroll_review_left {
-        margin-right: 60px;
+    .review_in {
+        width: 100%;
+        margin: auto;
+        justify-content: space-around;
     }
 
     .goods_boost {
@@ -1401,20 +1420,16 @@ footer {
         margin-left: 40px;
     }
 
-    .mySwiper .swiper-slide h4,
-    .mySwiper .swiper-slide p {
-        margin-left: 40px;
-    }
 }
 
 @media(max-width:550px) {
     .main_in h1 {
         font-size: 40px;
-        margin-left: -300px;
+
     }
 
     .main_in p {
-        margin-left: -300px;
+
         font-size: 20px;
     }
 
@@ -1476,6 +1491,14 @@ footer {
         padding: 30px 0;
     }
 
+    .mySwiper .swiper-slide-active h4,
+    .mySwiper .swiper-slide-active p {
+        width: 350px;
+        margin: auto;
+        padding: 0;
+
+    }
+
     .wave_line {
         top: 30%;
     }
@@ -1519,12 +1542,22 @@ footer {
         height: 42px;
     }
 
-    .main_in h1 {
-        margin-left: -400px;
+    .t1,
+    .t2,
+    .t5 {
+        width: 340px;
     }
 
-    .main_in p {
-        margin-left: -400px;
+    .t3 {
+        width: 250px;
+    }
+
+    .t2 {
+        left: 70px;
+    }
+
+    .t5 {
+        left: 80px;
     }
 
     .story h1 {
@@ -1538,6 +1571,21 @@ footer {
     .review_box {
         width: 200px;
         height: 230px;
+        box-sizing: border-box;
+        padding: 30px 40px;
+    }
+
+    .review_box h4 {
+        font-size: 20px;
+    }
+
+    .review_box p {
+        font-size: 14px;
+    }
+
+    .review_box h5 {
+        font-size: 10px;
+        margin-top: 50px;
     }
 
     .boost_in {
@@ -1589,7 +1637,111 @@ footer {
         justify-content: center;
 
     }
-    .footer_in img{
+
+    .footer_in img {
         margin-bottom: 10px;
+    }
+}
+
+@media(max-width:401px) {
+    .alarm_text p {
+        font-size: 12px;
+    }
+
+    .main_banner {
+        height: 700px;
+    }
+
+    .main_banner img {
+        top: -70px;
+    }
+
+    .main_in p {
+        font-size: 15px;
+    }
+
+    .main1_in p {
+        font-size: 12px;
+    }
+
+    .mySwiper .swiper-slide-active h4,
+    .mySwiper .swiper-slide-active p {
+        width: 300px;
+        margin: auto;
+    }
+
+    .mySwiper .swiper-slide-active h4 {
+        font-size: 18px;
+    }
+
+    .mySwiper .swiper-slide-active p {
+        font-size: 15px;
+    }
+
+    .t1,
+    .t2,
+    .t5 {
+        width: 250px;
+    }
+
+    .t3 {
+        width: 180px;
+    }
+
+    .review_in {
+        height: 500px;
+        justify-content: center;
+    }
+
+    .review_box {
+        padding: 30px 40px;
+    }
+
+    .scroll_review_right {
+        display: none;
+    }
+
+    .footer_text p {
+        font-size: 11px;
+    }
+
+}
+
+@media(max-width:330px) {
+    .main_alarm {
+        display: none;
+    }
+    .main_banner{
+        height: 450px;
+    }
+    .main_banner img{
+        width: 800px;
+        top: -10px;
+    }
+    .photo_in{
+        height: 500px;
+    }
+    .t2{
+        top: 180px;
+        left: 50px;
+    }
+    .t3{
+        top: 280px;
+    }
+    .t5{
+        top: 380px;
+        left: 50px;
+    }
+    .big_img{
+        width: 300px
+    }
+    .mySwiper .swiper-slide-active h4, .mySwiper .swiper-slide-active p{
+        width: 200px;
+    }
+    .mySwiper .swiper-slide-active p{
+        font-size: 13px;
+    }
+    .wave_box{
+        height: 500px;
     }
 }
