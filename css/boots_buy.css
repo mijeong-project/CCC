@@ -1,0 +1,474 @@
+@charset "utf-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    font-family: 'Pretendard';
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    min-width: 1320px;
+}
+
+/* header */
+header {
+    background-color: #FFD791;
+    padding: 10px 0;
+}
+
+.header_in {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.nav a {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: #f18b2f;
+    font-weight: 800;
+}
+
+.login {
+    display: flex;
+    gap: 10px;
+}
+
+.login a {
+    background-color: #5f3d33;
+    color: #fff;
+    border-radius: 50px;
+    padding: 3px 12px;
+}
+
+.login a:hover {
+    background-color: #f18b2f;
+}
+
+/* header */
+
+/* main_banner */
+.main {
+    background: url(../image/ab_main_banner.png) no-repeat top center/cover;
+}
+
+.main_in {
+    width: 1320px;
+    height: 840px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.main_text h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.main_text p {
+    font-size: 25px;
+    line-height: 1.7;
+}
+
+.swiper {
+    width: 800px;
+    height: 500px;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* main_banner */
+
+
+/* 한 생명을 살리는 선물 */
+.ribone {
+    width: 300px;
+    position: absolute;
+    top: -200px;
+}
+
+.st0 {
+    /* 점선만들기 */
+    stroke-dasharray: 1100;
+    /* 점선 시작점 */
+    stroke-dashoffset: 1100;
+    animation: ani 4s infinite linear;
+}
+@keyframes ani {
+    0% {
+        stroke-dashoffset: 1100;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+
+    }
+}
+
+
+@font-face {
+    font-family: '양진체';
+    src: url('https://fastly.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.table_goods {
+    width: 1320px;
+    margin: auto;
+}
+
+.tgoods_in {
+    text-align: center;
+}
+
+.svg img:nth-child(1) {
+    display: flex;
+    margin: 100px auto 10px;
+}
+
+.svg h1 {
+    color: #f18b2f;
+    font-family: '양진체';
+    margin-bottom: 30px;
+}
+.tgoods_in{
+    position: relative;
+    width: 1320px;
+    height: 300px;
+    margin: 200px auto 0;
+}
+
+.tgoods_in p {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.tgoods_in select {
+    background-color: #f18b2f;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    border: none;
+    padding: 5px 10px;
+    margin: 30px 0;
+}
+.tgoods_in option{
+    text-align: center;
+}
+.tgoods_in .btn option{
+    text-align: center;
+}
+.tg_box {
+    width: 400px;
+    height: 800px;
+}
+
+.tg_box1 {
+    background: url(../image/ab_table.png) no-repeat 50% 80%;
+    width: 1320px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tg_box1 li:nth-child(1) div {
+    background: url(../image/ab_gift1.png) no-repeat center top;
+    background-size: 450px;
+}
+
+.tg_box1 li:nth-child(2) div {
+    background: url(../image/ab_gift2.png) no-repeat center top;
+    background-size: 330px;
+}
+
+.tg_box1 li:nth-child(3) div {
+    background: url(../image/ab_gaift3.png) no-repeat 50% 160%;
+    background-size: 250px;
+}
+
+.tg_box1 li div {
+    transition: all 0.5s;
+}
+
+
+.tg_box1 div {
+    width: 300px;
+    height: 300px;
+}
+
+.tg_box2 {
+    display: flex;
+    justify-content: space-around;
+    width: 1302px;
+    justify-content: space-around;
+    margin: -30px 0 0 20px;
+    text-align: left;
+}
+
+.tg_box2 ul li:nth-child(1) {
+    font-size: 25px;
+}
+
+.tg_box1-1 li:nth-child(1) div {
+    background: url(../image/ab_gift4.png) no-repeat 50% 170%;
+}
+
+.tg_box1-1 li:nth-child(2) div {
+    background: url(../image/ab_gift5.png) no-repeat 50% 250%;
+   background-size: 400px;
+}
+
+.tg_box1-1 li:nth-child(3) div {
+    background: url(../image/ab_gift6.png) no-repeat 50% 500%;
+}
+
+.tg_box1-3 li:nth-child(1) div {
+    background: url(../image/ab_gift7.png) no-repeat 50% -20%;
+}
+
+.tg_box1-3 li:nth-child(2) div {
+    background: url(../image/ab_gift8.png) no-repeat 50% 160%;
+background-size: 260px;
+}
+
+.tg_box1 li div:hover {
+    transform: translateY(-20px);
+}
+
+.tg_box-1 {
+    margin-top: -350px;
+}
+
+.tab,
+.tab2 {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.tabnav,
+.tabnav2 {
+    width: 1320px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: center;
+    margin-top: -330px;
+}
+
+.tabnav li a,
+.tabnav2 li a {
+    display: block;
+    padding: 20px 40px;
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+    margin: 20px 0 150px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.tabnav li a.active {
+    font-weight: 800;
+    color: #f18b2f;
+}
+
+.tabnav2 li a.active {
+    font-weight: 800;
+    color: #f18b2f;
+}
+
+.tabnav li a:hover {
+    color: #f18b2f;
+}
+
+.tabnav2 li a:hover {
+    color: #f18b2f;
+}
+.tabcontent2{
+    margin-top: 50px;
+}
+
+/* 한 생명을 살리는 선물 */
+
+/* 나를위한 선물 모두를 위한 선물 */
+.g_box {
+    margin-bottom: 30px;
+}
+
+.g_box1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.g_box1 div {
+    width: 400px;
+    height: 400px;
+}
+
+.g_box2 ul li:nth-child(1) {
+    font-size: 24px;
+}
+
+.g_box2 {
+    display: flex;
+    justify-content: space-around;
+    width: 1320px;
+    margin: -30px 0 0 -40px;
+    text-align: left;
+}
+
+.g_box2 a {
+    margin-left: -70px;
+}
+
+.g_box1 li:nth-of-type(1) div {
+    background: url(../image/ab_goods1.png) no-repeat;
+}
+
+.g_box1 li:nth-of-type(2) div {
+    background: url(../image/ab_goods2.png) no-repeat;
+}
+
+.g_box1 li:nth-of-type(3) div {
+    background: url(../image/ab_goods3.png) no-repeat;
+}
+
+.g_box1-1 li:nth-of-type(1) div {
+    background: url(../image/ab_goods4.png) no-repeat;
+}
+
+.g_box1-1 li:nth-of-type(2) div {
+    background: url(../image/ab_goods5.png) no-repeat;
+}
+
+.g_box1-1 li:nth-of-type(3) div {
+    background: url(../image/ab_goosd6.png) no-repeat;
+}
+
+.tabnav2 {
+    margin: 30px 0;
+}
+.g_box1 li{
+    transition: 0.5s;
+}
+.g_box1 li:hover{
+    transform: translateY(-20px);
+}
+
+.buy:hover{
+    filter: opacity(0.5);
+}
+/* 나를위한 선물 모두를 위한 선물 */
+
+/* footer */
+footer {
+    background-color: #ffd07d;
+}
+
+.footer_in {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.footer_text {
+    color: #5f3d33;
+}
+
+.footer_text ul {
+    display: flex;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.footer_text ul a {
+    color: rgba(95, 61, 51, 0.5)
+}
+
+.sns {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.footer_link a:hover {
+    color: #5f3d33;
+}
+
+.sns a:hover {
+    opacity: 0.5;
+}
+
+/* footer */
+
+/* 탑버튼 */
+.top_btn {
+    position: fixed;
+    bottom: 150px;
+    right: 60px;
+    animation: btn 1s infinite linear alternate;
+    /* mix-blend-mode: luminosity; */
+    z-index: 10;
+}
+
+
+@keyframes btn {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(50%)
+    }
+}

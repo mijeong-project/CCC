@@ -1,0 +1,568 @@
+@charset "utf-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    font-family: 'Pretendard';
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    min-width: 1320px;
+}
+
+/* header */
+header {
+    background-color: #FFD791;
+    padding: 10px 0;
+}
+
+.header_in {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.nav a {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: #f18b2f;
+    font-weight: 800;
+}
+
+.login {
+    display: flex;
+    gap: 10px;
+}
+
+.login a {
+    background-color: #5f3d33;
+    color: #fff;
+    border-radius: 50px;
+    padding: 3px 12px;
+}
+
+.login a:hover {
+    background-color: #f18b2f;
+}
+
+/* header */
+
+/* main_banner */
+.main {
+    width: 1320px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.main_text {
+    width: 900px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.typing span {
+    font-family: 'InkLipquid';
+    font-size: 60px;
+    color: #f7a157;
+}
+
+.typing h1 {
+    color: #5f3d33;
+    font-size: 55px;
+}
+
+.typing {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 20px;
+}
+
+.text {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.text::after {
+    content: '';
+    margin-left: 10px;
+    border-right: 2px solid #777;
+    animation: cursor .9s infinite steps(2);
+}
+
+@keyframes cursor {
+    0% {
+        border-right: 2px solid #222;
+    }
+
+    100% {
+        border-right: 2px solid #777;
+    }
+}
+
+
+.main_img img:nth-of-type(1) {
+    margin-right: 80px;
+}
+
+.main_img{
+    width:1320px;
+    margin: auto;
+}
+.main_icon1 {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    animation: icon 3s infinite alternate linear;
+}
+
+.main_icon2 {
+    position: absolute;
+    top: 40%;
+    left: 82%;
+    animation: icon 3s infinite alternate linear;
+}
+
+@keyframes icon {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+/* main_banner */
+
+
+/* 자주묻는질문 */
+.qna {
+    width: 1200px;
+    margin: 120px auto;
+}
+
+.qna h1::after {
+    content: '';
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    background-color: #fbdeab;
+    transform: skewX(-40deg);
+    margin-left: 10px;
+}
+
+.qna h1 {
+    position: relative;
+    font-size: 35px;
+    background-color: #fbdeab;
+    width: 315px;
+    height: 60px;
+    text-align: end;
+    box-sizing: border-box;
+    padding: 10px 40px 20px 0;
+    box-shadow: 5px 20px 15px rgba(204, 204, 204, 0.747);
+    border-radius: 100px 0 0 0;
+    margin-left: 140px;
+}
+
+.tab {
+    overflow: hidden;
+    display: flex;
+
+}
+
+.tabnav {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    width: 110px;
+    margin-left: -50px;
+    padding-top: 50px;
+    gap: 20px;
+}
+
+.tabnav a {
+    display: block;
+    height: 80px;
+    color: #5f3d33;
+}
+
+.tabnav li:nth-of-type(1) {
+    background-color: #ffdcec;
+}
+
+.tabnav li:nth-of-type(2) {
+    background-color: #ffe5b8;
+}
+
+.tabnav li:nth-of-type(3) {
+    background-color: #dafbd4;
+}
+
+.tabnav li:nth-of-type(4) {
+    background-color: #d7eaf2;
+}
+
+.tabnav li:hover a,
+.tabnav li a.active {
+    transform: translateX(50px);
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+
+.tabnav li:hover,
+.tabnav li.active2 {
+    transform: translateX(50px);
+}
+
+.tabcontent {
+    background-color: #fff8eb;
+    width: 900px;
+    height: 560px;
+    box-sizing: border-box;
+    padding: 80px 50px;
+    z-index: 2;
+    box-shadow: 5px 20px 15px rgba(204, 204, 204, 0.747);
+    margin-left: 110px;
+}
+
+.tabcontent b {
+    font-size: 26px;
+    color: #f18b2f;
+}
+
+.tabcontent p {
+    font-size: 24px;
+    padding-top: 50px;
+    line-height: 2;
+    font-weight: 600;
+}
+
+
+/* 자주묻는질문 */
+
+/* 공지사항 */
+.notice {
+    width: 1060px;
+    margin: auto;
+}
+
+.notice h1 {
+    font-size: 35px;
+    text-align: center;
+    border-bottom: #f18b2f 6px solid;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+}
+
+.notice_in {
+    width: 1100px;
+    margin: auto;
+}
+
+.notice_in li {
+    width: 1060px;
+    border-bottom: 1px solid #ccc;
+}
+
+.notice_in h5 {
+    font-size: 22px;
+    background-color: #ffb778;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.notice_in h3 {
+    font-size: 25px;
+}
+
+.notice_in li:nth-of-type(2) h3 {
+    margin-left: -350px;
+}
+
+.notice_in li:nth-of-type(3) h3 {
+    margin-left: -50px;
+}
+
+.notice_in li:nth-of-type(4) h3 {
+    margin-left: -550px;
+}
+
+.notice_in h6 {
+    font-size: 18px;
+    color: #777;
+    margin: 0 0 30px 15px;
+}
+
+.notice_in li.on a img {
+    filter: opacity(1);
+}
+
+.notice_in a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notice_in a:hover img {
+    filter: opacity(1);
+}
+
+.notice_in li div {
+    width: 100%;
+    display: none;
+    padding: 10px 30px;
+    font-size: 19px;
+    margin: 20px 0;
+}
+
+.notice_in a img {
+    margin: 30px 0 0 40px;
+    filter: opacity(0.4);
+}
+
+/* 공지사항 */
+
+
+/* 문의사항 */
+.letter {
+    width: 1320px;
+    margin: auto;
+}
+
+.letter h1 {
+    text-align: center;
+    font-size: 35px;
+    margin: 200px 0 60px;
+}
+.letter_in a{
+    background-color: #f18b2f;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-top: 200px;
+    transition: 0.5s;
+}
+.letter_in a:hover{
+    background-color: #5f3d33;
+}
+.letter_in {
+    width: 650px;
+    margin: auto; 
+    height: 800px;
+    position: relative;
+    text-align: center;
+}
+
+.letter_text {
+    width: 500px;
+    height: 480px;
+    margin: auto;
+    background-color: #f7f6f7;
+    box-sizing: border-box;
+    padding: 30px;
+   text-align: left;
+}
+.letter_text>p input{
+    display: none;
+}
+.letter_text>p b{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../image/radio_off.png);
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.letter_text>p input:checked + label b{
+    background: url(../image/radio_on.png);
+}
+.letter_text #no{
+    margin-left: 5px;
+}
+.letter2{
+    position: absolute;
+    top:140px;
+    left: 50%;
+    margin-left: -291px;
+    z-index: -1;
+    filter: saturate(200%);
+}
+.letter1{
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    margin-left: -291px;
+    filter: drop-shadow(10px 10px 10px rgba(204, 204, 204, 0.425));
+}
+
+.letter_text p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.letter_text p label:nth-of-type(2) {
+    margin-left: 40px;
+}
+
+.letter_text table th,
+.letter_text table td {
+    padding: 15px 0;
+}
+
+.letter_text table th {
+    font-size: 20px;
+    text-align: left;
+    padding-right: 10px;
+}
+.letter_text table td input{
+    width: 140px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #666;
+    outline: none;
+}
+
+.letter_text .file input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid 
+    #666;
+    font-size: 17px;
+    outline: none;
+}
+.letter_text .title input{
+    width: 300px;
+}
+.letter_text .in_text th{
+    padding-bottom: 90px;
+}
+.letter_text textarea{
+    width: 300px;
+    height: 100px;
+}
+
+/* 문의사항 */
+
+
+/* footer */
+footer {
+    background-color: #ffd07d;
+}
+
+.footer_in {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.footer_text {
+    color: #5f3d33;
+}
+
+.footer_text ul {
+    display: flex;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.footer_text ul a {
+    color: rgba(95, 61, 51, 0.5)
+}
+
+.sns {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.footer_link a:hover {
+    color: #5f3d33;
+}
+
+.sns a:hover {
+    opacity: 0.5;
+}
+
+/* footer */
+
+/* 탑버튼 */
+.top_btn {
+    position: fixed;
+    bottom: 150px;
+    right: 60px;
+    animation: btn 1s infinite linear alternate;
+    /* mix-blend-mode: luminosity; */
+    z-index: 10;
+}
+
+
+@keyframes btn {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(50%)
+    }
+}
