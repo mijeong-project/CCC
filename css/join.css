@@ -74,3 +74,97 @@ header {
 }
 
 /* header */
+
+/* join */
+.join{
+    width: 1320px;
+    margin: auto;
+}
+.join h1{
+    text-align: center;
+    margin: 50px 0 150px;
+}
+.box1{
+    background-color: #ffb574;
+    width: 1140px;
+    height: 1600px;
+    margin: auto;
+    box-sizing: border-box;
+    padding-top: 80px;
+    border-radius: 50px;
+    position: relative;
+}
+.clip{
+    position: absolute;
+    top: -80px;
+    left: 660px;
+    margin-left: -330px;
+}
+.box2{
+    background-color: #fff;
+    width: 1000px;
+    height: 1500px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 130px;
+}
+
+.box2 li{
+    list-style: url(../image/a_heart_icon.png);
+}
+.box2 li p{
+    font-size: 30px;
+    margin: 20px 0 30px;
+}
+.box2 li input{
+    border: none;
+    border-bottom: 3px solid #ccc;
+}
+.box2 .line{
+    width: 100%;
+    padding: 20px 0;
+}
+.box2 ::placeholder{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.li_in{
+    display: flex;
+    
+}
+.li_in .submit_btn{
+    background-color: #ffb574;
+    color: #fff;
+    padding: 5px 20px;
+    width: 150px;
+    font-size: 18px;
+}
+
+.box2 select{
+    font-size: 20px;
+    width: 160px;
+}
+.box2 label{
+    font-size: 30px;
+    color: #666;
+}
+.box2 ul li:nth-of-type(8){
+    margin: 20px 0 30px -20px;
+    list-style: none;
+    }
+.box2 a{
+    font-size: 20px;
+}
+.join_btn{
+    background-color: #ffb574;
+    color: #fff;
+    padding: 10px 20px;
+    margin: auto;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+.join input[type="submit"]{
+    cursor: url(../image/cusor_a.png), auto;
+}
+/* join */
