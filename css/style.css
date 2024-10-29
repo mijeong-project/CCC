@@ -147,7 +147,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
     width: 60%;
     height: 100%;
     background: #fff;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -100%;
     z-index: 1;
