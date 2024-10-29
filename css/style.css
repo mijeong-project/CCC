@@ -1126,17 +1126,17 @@ footer {
     color: #5f3d33;
 }
 
-.sns a:hover {
+.footer_text .sns a:hover {
     opacity: 0.5;
 }
 
-.sns2 {
+.footer_text  .sns2 {
     display: none;
     align-items: center;
     gap: 30px;
 }
 
-.sns2 a:hover {
+.footer_text  .sns2 a:hover {
     opacity: 0.5;
 }
 
@@ -2043,7 +2043,7 @@ footer {
 
 }
 
-@media (max-width:360px) {
+@media (max-width:375px) {
     .sidebar::before{
         top: 150px;
     }
