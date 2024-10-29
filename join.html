@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1400px">
@@ -9,9 +10,10 @@
 
     <link rel="stylesheet" href="./css/join.css">
 </head>
+
 <body>
-     <!-- header -->
-     <header>
+    <!-- header -->
+    <header>
         <div class="header_in">
             <a href="./index.html"><img src="./image/logo.png" alt="메인로고"></a>
             <ul class="nav">
@@ -29,5 +31,69 @@
         </div>
     </header>
     <!-- header -->
+    <!-- join -->
+    <div class="join">
+        <h1>회원가입</h1>
+        <div class="box1">
+            <img src="image/j_back.png" alt="클립이미지" class="clip">
+            <div class="box2">
+                <ul>
+                    <li>
+                        <p>아이디</p>
+
+                        <div class="li_in">
+                            <input type="text" placeholder="아이디 입력" class="line">
+                            <input type="submit" value="중복확인" class="submit_btn">
+                        </div>
+                    </li>
+                    <li>
+                        <p>비밀번호</p>
+                        <input type="password" placeholder="비밀번호 입력" class="line">
+                    </li>
+                    <li>
+                        <p>비밀번호 확인</p>
+                        <input type="password" placeholder=" 비밀번호 입력" class="line">
+                    </li>
+                    <li>
+                        <p>이름</p>
+                        <input type="text" placeholder="성명을 입력하세요" class="line">
+                    </li>
+                    <li>
+                        <p>휴대폰 번호</p>
+                        <div class="li_in">
+                            <select>
+                                <option value="skt">SKT</option>
+                                <option value="LG">LG U+</option>
+                                <option value="KT">KT</option>
+                                <option value="알뜰폰">알뜰폰</option>
+                            </select>
+                            <input type="text" placeholder="'-'구분없이 입력" class="line">
+                            <input type="submit" value="인증번호 전송" class="submit_btn">
+                        </div>
+                    </li>
+                    <li>
+                        <p>인증번호</p>
+                        <div class="li_in">
+                            <input type="text" placeholder="인증번호 입력" class="line">
+                            <input type="submit" value="인증번호 확인" class="submit_btn">
+                        </div>
+                    </li>
+                    <li>
+                        <p>생년월일</p>
+                        <input type="text" placeholder="8자리 입력 (예: 19990913)" class="line">
+                    </li>
+                    <li>
+                        <input type="checkbox" id="agree">
+                        <label for="agree"><b></b>모든 약관 동의합니다.</label>
+                        <a href="#">약관 내용 확인하기 ></a>
+                    </li>
+                </ul>
+                <a href="#" class="join_btn">가입하기</a>
+            </div>
+        </div>
+    </div>
+    <!-- join -->
+
 </body>
+
 </html>
