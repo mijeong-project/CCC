@@ -2167,7 +2167,6 @@ footer {
     .boost_in {
         gap: 0;
     }
-
     .goods_boost {
         height: 250px;
     }
@@ -2177,9 +2176,11 @@ footer {
     }
 
     .goods_boost:nth-child(3) {
-        background-size: 90px;
+        background:url(../image/day_icon.png) no-repeat #ffb778 50% 25%
     }
-
+    .goods_boost:nth-child(3) h3{
+        margin-top: 30px;
+    }
     .wave_box {
         height: 500px;
     }
