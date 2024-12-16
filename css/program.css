@@ -78,9 +78,8 @@ header {
 /* header */
 
 /* main_banner */
-.main_banner {
-    background: url(../image/p_main_banner.png) no-repeat center/cover;
-    height: 840px;
+.main_banner video{
+    width:100%;
     overflow: hidden;
 }
 
