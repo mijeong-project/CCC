@@ -15,19 +15,19 @@ var swiper = new Swiper('.flowslide_inner ', {
         },
         460: {
             slidesPerView: 2,
-            spaceBetween: 50,
+            spaceBetween: 20,
         },
         400: {
             slidesPerView: 2,
-            spaceBetween: 50,
+            spaceBetween: 20,
         },
         370: {
             slidesPerView: 2,
-            spaceBetween: 50,
+            spaceBetween: 20,
         },
         320: {
             slidesPerView: 2,
-            spaceBetween: 50,
+            spaceBetween: 20,
         },
     },
 });
