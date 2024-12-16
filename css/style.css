@@ -1132,13 +1132,13 @@ footer {
     opacity: 0.5;
 }
 
-.footer_text  .sns2 {
+.footer_text .sns2 {
     display: none;
     align-items: center;
     gap: 30px;
 }
 
-.footer_text  .sns2 a:hover {
+.footer_text .sns2 a:hover {
     opacity: 0.5;
 }
 
@@ -1873,6 +1873,7 @@ footer {
         height: 30px;
         top: 25px
     }
+
     header {
         padding: 2px;
     }
@@ -2046,24 +2047,28 @@ footer {
 }
 
 @media (max-width:375px) {
-    .sidebar::before{
+    .sidebar::before {
         top: 150px;
     }
+
     .sidebar ul li:nth-of-type(4) a,
     .sidebar ul li:nth-of-type(5) a,
     .sidebar ul li:nth-of-type(6) a,
     .sidebar ul li:nth-of-type(7) a,
     .sidebar ul li:nth-of-type(8) a {
         font-size: 20px;
-        
+
     }
-    .sidebar ul li:nth-of-type(9) img{
-       display: none;
+
+    .sidebar ul li:nth-of-type(9) img {
+        display: none;
     }
+
     .sidebar p {
         font-size: 20px;
     }
-    .sidebar{
+
+    .sidebar {
         height: 525px;
     }
 
@@ -2099,6 +2104,8 @@ footer {
 
     .main1_in p {
         font-size: 15px;
+        width: 340px;
+        margin: auto;
     }
 
     #product-carousel li p {
@@ -2135,33 +2142,48 @@ footer {
     .big_img {
         width: 300px
     }
+
     .mySwiper .swiper-slide-active h4,
     .mySwiper .swiper-slide-active p {
         width: 200px;
     }
-    .mySwiper .swiper-slide-active h4{
+
+    .mySwiper .swiper-slide-active h4 {
         font-size: 20px;
     }
+
     .mySwiper .swiper-slide-active p {
         font-size: 13px;
     }
-    .boost_in{
+
+    .boost_in {
         gap: 0;
     }
-    .goods_boost h3{
+.goods_boost{
+    height: 250px;
+}
+    .goods_boost h3 {
         padding: 10px 0 5px;
     }
-    .goods_boost:nth-child(3){
-       background-size: 90px;
+
+    .goods_boost:nth-child(3) {
+        background-size: 90px;
     }
+
     .wave_box {
         height: 500px;
     }
-    .news{
+
+    .news {
         margin-bottom: 50px;
     }
-.goods_boost:nth-child(3)
-    .footer_text p {
+
+    .goods_boost:nth-child(3) .footer_text p {
         font-size: 9px;
+    }
+}
+@media (max-width:321px){
+    .main1_in p{
+        width: 280px;
     }
 }
