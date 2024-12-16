@@ -2046,7 +2046,7 @@ footer {
 
 }
 
-@media (max-width:375px) {
+@media (max-width:376px) {
     .sidebar::before {
         top: 150px;
     }
@@ -2099,7 +2099,7 @@ footer {
     }
 
     .main1_in h2 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .main1_in p {
@@ -2142,26 +2142,36 @@ footer {
     .big_img {
         width: 300px
     }
-
+    .mySwiper .swiper-slide-active .big_img{
+        margin: auto;
+    }
     .mySwiper .swiper-slide-active h4,
     .mySwiper .swiper-slide-active p {
         width: 200px;
+       text-align: center;
     }
-
+    .mySwiper .swiper-slide-active p {
+        font-size: 15px;
+        width: 280px;
+    }
     .mySwiper .swiper-slide-active h4 {
         font-size: 20px;
+        margin-bottom: 10px;
     }
-
-    .mySwiper .swiper-slide-active p {
-        font-size: 13px;
+    #product-carousel-container{
+        height: 350px;
     }
-
+    .more_btn{
+        margin-top: -20px;
+    }
     .boost_in {
         gap: 0;
     }
-.goods_boost{
-    height: 250px;
-}
+
+    .goods_boost {
+        height: 250px;
+    }
+
     .goods_boost h3 {
         padding: 10px 0 5px;
     }
@@ -2182,8 +2192,12 @@ footer {
         font-size: 9px;
     }
 }
-@media (max-width:321px){
-    .main1_in p{
+
+@media (max-width:321px) {
+    .main1_in p {
         width: 280px;
+    }
+    .main1_in h2{
+        font-size: 17px;
     }
 }
