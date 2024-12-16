@@ -688,6 +688,8 @@ input[id="menuicon"]:checked+label+div {
 
 .swiper-slide h4 {
     font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .swiper-slide p {
@@ -1386,7 +1388,7 @@ footer {
     }
 
     .main1_in p {
-        font-size: 20px;
+        font-size: 26px;
     }
 
     .photo_in h1 {
@@ -1905,7 +1907,7 @@ footer {
     }
 
     .main1_in p {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .mySwiper .swiper-slide-active h4,
@@ -2096,7 +2098,7 @@ footer {
     }
 
     .main1_in p {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     #product-carousel li p {
@@ -2113,6 +2115,7 @@ footer {
 
     .photo_in {
         height: 500px;
+        margin: 20px 0;
     }
 
     .t2 {
@@ -2132,20 +2135,32 @@ footer {
     .big_img {
         width: 300px
     }
-
     .mySwiper .swiper-slide-active h4,
     .mySwiper .swiper-slide-active p {
         width: 200px;
     }
-
+    .mySwiper .swiper-slide-active h4{
+        font-size: 20px;
+    }
     .mySwiper .swiper-slide-active p {
         font-size: 13px;
     }
-
+    .boost_in{
+        gap: 0;
+    }
+    .goods_boost h3{
+        padding: 10px 0 5px;
+    }
+    .goods_boost:nth-child(3){
+       background-size: 90px;
+    }
     .wave_box {
         height: 500px;
     }
-
+    .news{
+        margin-bottom: 50px;
+    }
+.goods_boost:nth-child(3)
     .footer_text p {
         font-size: 9px;
     }
